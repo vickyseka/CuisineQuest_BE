@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 
-const loc = require("./controller/location")
+const loc = require("./Controller/location")
 const mealType = require("./controller/mealType")
 const restaruant = require("./controller/restaruant")
 const register = require("./Controller/signup")
