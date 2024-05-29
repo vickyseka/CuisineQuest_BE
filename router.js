@@ -3,10 +3,10 @@ const router = express.Router()
 
 const loc = require("./Controller/location")
 const mealType = require("./Controller/mealType")
-const restaruant = require("./controller/restaruant")
-const register = require("./Controller/signup")
-const login = require("./Controller/signIn")
-const menuItem = require("./controller/MenuItems")
+const restaruant = require("./Controller/rest")
+const register = require("./Controller/register")
+const login = require("./Controller/login")
+const menuItem = require("./Controller/menu")
 
 
 router.get('/getallloc',loc.getAllLoc)
@@ -29,7 +29,7 @@ router.get('/menuItem',menuItem.getAllmenuItem)
 
 
 
-const payment = require('./controller/paymentcontroller');
+const payment = require('./Controller/payment');
 
 router.post('/payment/process',payment.processPayment);
 router.get('/stripe',payment.sendStripe);
